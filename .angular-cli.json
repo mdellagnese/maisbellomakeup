@@ -19,9 +19,15 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/font-awesome/less/font-awesome.less",
+        "assets/css/mdb.min.css",
         "styles.less"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/chart.js/dist/Chart.js",
+        "../node_modules/hammerjs/hammer.min.js",
+        "assets/js/mdb.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -29,11 +35,6 @@
       }
     }
   ],
-  "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
-  },
   "lint": [
     {
       "project": "src/tsconfig.app.json",
@@ -48,11 +49,6 @@
       "exclude": "**/node_modules/**"
     }
   ],
-  "test": {
-    "karma": {
-      "config": "./karma.conf.js"
-    }
-  },
   "defaults": {
     "styleExt": "less",
     "component": {}
